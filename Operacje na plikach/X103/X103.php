@@ -2,7 +2,7 @@
 $file=fopen("imiona.txt", "r");
 while(!feof($file)){
     $f=fgets($file);
-    echo "$f";
+    echo "$f<br>";
 }
 echo "<br>";
 $file2=fopen("imiona.txt", "r");
