@@ -3,7 +3,7 @@ function fun1($file){
     $file=fopen('narodoweCzytanie.txt', "r");
     while(!feof($file)){
         $f=fgets($file);
-        echo "$f \n";
+        echo "$f<br>";
     }
     fclose($file);
     return 1;
@@ -15,3 +15,4 @@ WŁĄCZAJĄC SIĘ DO OGÓLNOPOLSKIEJ AKCJI, ZAPRASZAMY DO WSPÓLNEGO CZYTANIA W 
 NA DRUGIEJ GODZINIE LEKCYJNEJ W AULI SZKOLNEJ. CZYTAĆ BĘDĄ UCZNIOWIE KLASY 2M.\n
 FORMUŁA SPOTKANIA NIE JEST ZAMKNIĘTA – KAŻDY MOŻE PRZYŁĄCZYĆ SIĘ DO CZYTANIA LUB SŁUCHANIA.");
 fun1($file);
+//Eryk Czuchran
