@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zaprojektuj swoje buty!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Formularz konkursu "Podrasuj swoje buty!"</h1>
+<p>Chcesz zamienić swoje stare trampki na nową parę? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore doloremque et fugit itaque magni, nulla quae quos vitae voluptatum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis error fugit pariatur sit vitae. Debitis dolor eius expedita velit voluptate.</p>
+<form method="post" action="script.php">
+    <fieldset>
+        <legend>Podstawowe dane</legend>
+        <label>Imię i nazwisko: <input type="text" name="nameAnd"><br></label>
+        <label>E-mail: <input type="text" name="email"><br></label>
+        <label>Telefon: <input type="text" name="tel"><br></label>
+        <label>Moje buty są TAKIE stare:<br><textarea name="textA" maxlength="300" placeholder="Maksymalnie 300 znaków" cols="50" rows="10"></textarea></label>
+    </fieldset>
+    <h1>Zaprojektuj własne trampki:</h1><br>
+    <fieldset>
+        <legend>Własny projekt butów:</legend>
+        <fieldset>
+            <legend>Kolor(wybierz jeden):</legend>
+                <label><input type="radio" name="color" value="czerwony">czerwony<br></label>
+                <label><input type="radio" name="color" value="color">niebieski<br></label>
+            <label><input type="radio" value="czarny" name="color">czarny<br></label>
+            <label>
+            <input type="radio" name="silver" value="srebny">srebny<br></label>
+        </fieldset>
+        <fieldset>
+            <legend>Opcje(możesz wybrać kilka)</legend>
+            <label><input type="checkbox" name="options[]" value="Błyszczące sznurówki">Błyszczące sznurówki<br></label>
+            <label><input type="checkbox" name="options[]" value="Metalowe logo">Metalowe logo<br></label>
+            <label><input type="checkbox" name="options[]" value="Świecące podeszwy">Świecące podeszwy<br></label>
+            <label><input type="checkbox" name="options[]" value="Odtwarzanie MP$">Odtwarzanie MP3</label>
+        </fieldset>
+        <fieldset>
+            <legend>Rozmiar</legend>
+            <p>Rozmiar zgodny z numeracją</p>
+            <select name="size">
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">41</option>
+                <option value="42">42</option>
+                <option value="43">43</option>
+                <option value="44">44</option>
+                <option value="45">45</option>
+            </select>
+        </fieldset>
+    </fieldset>
+    <input type="submit" value="Prześlij"><input type="reset" value="Reset">
+</form>
+</body>
+</html>
