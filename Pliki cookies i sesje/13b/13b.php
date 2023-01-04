@@ -13,7 +13,7 @@ if(!isset($_COOKIE['dane']) && !isset($_POST['nazw'])){
 <body>
 <form action="13b.php" method="post">
     <label>Podaj nazwisko i imię:<br><input type="text" name="nazw"></label>
-    <label>Podaj swoją datę urodzin:<br><input type="date" name="urod"></label>
+    <label>Podaj miesiąc i dzień swoich urodzin:<br><input type="date" name="urod"></label>
     <label><input type="submit" value="Wyślij"> </label>
 </form>
 <?php
@@ -31,7 +31,6 @@ if(!isset($_COOKIE['dane']) && !isset($_POST['nazw'])){
         $day.=$dataUrodzin[9];
         $month=$dataUrodzin[5];
         $month.=$dataUrodzin[6];
-        echo "$month $day <br>";
         echo "Twoje urodziny odbędą się: ".$_COOKIE['urodziny']."! To za ".$month-$dataM." miesięcy i ".$day-$dataD." dni!";
         //Eryk Czuchran
     }
