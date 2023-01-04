@@ -1,5 +1,4 @@
 <?php
-echo "Dziękujemy! Rejestracja przebiegła pomyślnie.<br>";
 echo "Wprowadzone dane:<br>";
 echo "Nazwisko: " . trim($_POST['nazw']) . "<br>";
 echo "Imię: " . trim($_POST['im']) . "<br>";
