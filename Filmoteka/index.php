@@ -1,3 +1,6 @@
+<?php
+$base=mysqli_connect('localhost', 'root', '', '3pir_dane');
+?>
 <!doctype html>
 <html lang="pl">
 <head>
@@ -17,14 +20,14 @@
         <h1>BAZA FILMÓW!</h1>
     </section>
     <section class="head">
-        <form method="post">
-            <label>
-                <select>
-                    <option name="Sci-Fi">Sci-Fi</option>
-                    <option name="animacja">animacja</option>
-                    <option name="dramat">dramat</option>
-                    <option name="horror">horror</option>
-                    <option name="komedia">komedia</option>
+        <form method="post" action="index.php">
+            <label id="">
+                <select name="genre">
+                    <option value="Sci-Fi">Sci-Fi</option>
+                    <option value="animacja">animacja</option>
+                    <option value="dramat">dramat</option>
+                    <option value="horror">horror</option>
+                    <option value="komedia">komedia</option>
                 </select>
             </label>
             <label><input type="submit" value="Wyślij"></label>
@@ -38,13 +41,20 @@
     <section class="mai">
         <h1>Wybrano filmy:</h1>
         <?php
-
+            $data=$_POST['genre'];
+            $query=mysqli_query($base, "SELECT filmy.tytul, filmy.rok, filmy.ocena FROM filmy WHERE gatunki.nazwa='$data';");
+            while ($row=mysqli_fetch_row($query)){
+                echo "<p>Tytuł: $row[0], Ocena: $row[2]</p>";
+            }
         ?>
     </section>
     <section class="mai">
         <h2>Wszystkie filmy:</h2>
         <?php
-
+            $query2=mysqli_query($base, "SELECT filmy.id, filmy.tytul, rezyserzy.imie, rezyserzy.imie FROM filmy INNER JOIN rezyserzy ON filmy.rezyserzy_id=rezyserzy.id;");
+            while ($row2=mysqli_fetch_row($query2)){
+                echo "<p>$row2[0]. $row2[1], reżyseria: $row2[2] $row2[3]</p>";
+            }
         ?>
     </section>
 </main>
@@ -53,3 +63,6 @@
 </footer>
 </body>
 </html>
+<?php
+mysqli_close($base);
+?>
