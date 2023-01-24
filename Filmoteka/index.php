@@ -36,11 +36,20 @@
 </header>
 <main>
     <section>
+        <h1>Wybrano filmy:</h1>
+        <?php
 
+        ?>
     </section>
     <section>
+        <h2>Wszystkie filmy:</h2>
+        <?php
 
+        ?>
     </section>
 </main>
+<footer>
+    <p>Autor: Eryk Czuchran 3pir</p> <a href="kwerendy.txt">Zapytania do bazy</a> <a href="https://filmy.pl" target="_blank">Przejdź na filmy.pl</a>
+</footer>
 </body>
 </html>
