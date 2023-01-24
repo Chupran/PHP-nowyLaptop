@@ -10,13 +10,13 @@
 </head>
 <body>
 <header>
-    <section>
+    <section class="head">
         <img src="pliki3/klaps.png" alt="Nasze filmy">
     </section>
-    <section>
+    <section class="head">
         <h1>BAZA FILMÓW!</h1>
     </section>
-    <section>
+    <section class="head">
         <form method="post">
             <label>
                 <select>
@@ -30,18 +30,18 @@
             <label><input type="submit" value="Wyślij"></label>
         </form>
     </section>
-    <section>
+    <section class="head">
         <img src="pliki3/gwiezdneWojny.jpg" alt="Szturmowcy">
     </section>
 </header>
 <main>
-    <section>
+    <section class="mai">
         <h1>Wybrano filmy:</h1>
         <?php
 
         ?>
     </section>
-    <section>
+    <section class="mai">
         <h2>Wszystkie filmy:</h2>
         <?php
 
