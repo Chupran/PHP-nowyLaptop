@@ -1,4 +1,4 @@
-SELECT filmy.tytul, filmy.rok, filmy.ocena FROM filmy WHERE filmy.gatunki_id=5;
-SELECT filmy.id, filmy.tytul, rezyserzy.imie, rezyserzy.nazwisko FROM filmy INNER JOIN rezyserzy ON rezyserzy.id=filmy.rezyserzy_id;
-SELECT filmy.id, filmy.tytul FROM filmy WHERE filmy.rok=2017 AND filmy.ocena=6;
-UPDATE rezyserzy SET rezyserzy.imie="Francis Ford" WHERE rezyserzy.id=8; 
+1.SELECT filmy.tytul, filmy.rok, filmy.ocena FROM filmy WHERE filmy.gatunki_id=5;
+2.SELECT filmy.id, filmy.tytul, rezyserzy.imie, rezyserzy.imie FROM filmy INNER JOIN rezyserzy ON filmy.rezyserzy_id=rezyserzy.id;
+3.SELECT filmy.id, filmy.tytul FROM filmy WHERE filmy.rok=2017 AND filmy.ocena=6;
+4.UPDATE rezyserzy SET rezyserzy.imie="Francis Ford" WHERE rezyserzy.id=8;
