@@ -1,3 +1,3 @@
-'1', 'Eryk', 'Czuchran', 'wp@wp.pl';
-'2', 'Jan', 'Kowalski', 'jankowalski@gmail.com';
-'3', 'Janusz', 'Nowak', 'nowak21@gmail.com';
+1, 'Eryk', 'Czuchran', 'wp@wp.pl';
+2, 'Jan', 'Kowalski', 'jankowalski@gmail.com';
+3, 'Janusz', 'Nowak', 'nowak21@gmail.com';
