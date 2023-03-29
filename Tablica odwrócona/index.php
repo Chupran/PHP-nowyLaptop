@@ -4,7 +4,14 @@ for($i=0; $i<4; $i++){
         $table[$i][$j]=rand(0,1);
     }
 }
-var_dump($table);
+echo "<table>
+        <tr>";
+for($i=0; $i<4; $i++){
+    for($j=0; $j<4; $j++){
+        echo "<td>$table[$i][$j]</td>";
+    }
+}
+echo "</tr></table>";
 $result=0;
 $counter=0;
 for($i=0; $i<4; $i++){
